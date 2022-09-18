@@ -1,0 +1,20 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "lib": ["es2015", "ES2020","dom"],
+    "paths": {
+      "@/*": ["./src/*"],
+      "monitor-sdk": ["././././"]
+    },
+    "preserveValueImports": false
+  },
+
+  "references": [
+    {
+      "path": "./tsconfig.config.json"
+    }
+  ]
+}
